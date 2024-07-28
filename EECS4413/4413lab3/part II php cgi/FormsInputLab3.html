@@ -1,0 +1,81 @@
+<!--
+ Michael S. Brown, EECS1012 - York University (CC)
+ FormsInput.html -->
+<!doctype html>
+<html lang="en">
+<head>
+<title> Form Example </title>
+<meta charset="utf-8">
+ <link href="FormsInput.css" rel="stylesheet"> 
+ 
+</head>
+<body>
+<form  action="http://www.cse.yorku.ca/~kyongrok/myScript.php" method="post">
+
+<div class="box">
+  <!-- First Name input -->
+  <h2> LAS Student Information </h2>
+  <p> <span class="fieldName">First Name: </span>
+    <input type="text"  name="firstName" class="input">
+  </p>
+  
+    <!-- Last Name input -->
+  <p> <span class="fieldName"> Last Name: </span>
+  <input  type="text" name="lastName" class="input">
+  </p>
+ 
+  <p> <span class="fieldName"> Email: </span>
+  <input  type="text" name="email" class="input">
+  </p>
+
+  <hr>
+ 
+  <p> <span class="fieldName"> Program: </span>
+  <select id="provinceList" name="program">
+    <option value="CHEM" >CHEM</option> 
+    <option value="CIVL" >CIVL</option>
+	<option value="EECS" selected>EECS</option> 
+	<option value="ECON" >ECON</option> 
+	<option value="HIST" >HIST</option> 
+	<option value="MATH"> MATH</option> 
+  </select>
+  </p>
+  
+  
+
+    
+  <p> <span class="fieldName"> Year: </span>
+ <input type="radio" name="year" value="1" checked="checked" /> 1
+<input type="radio" name="year" value="2" /> 2
+<input type="radio" name="year" value="3" /> 3
+<input type="radio" name="year" value="4" /> 4
+</p>
+  
+  <p> <span class="fieldName"> Hobbies: </span>
+   <input type="checkbox" name="hobby[]" value="Reading"/> Reading
+<input type="checkbox" name="hobby[]" value="Chatting"  /> Chatting
+<input type="checkbox" name="hobby[]" value="Jogging"/>  Jogging
+<input type="checkbox" name="hobby[]" value="Thinking" checked="checked"/>  Thinking
+<input type="checkbox" name="hobby[]" value="Painting"/>  Painting
+</p>
+ 
+ 
+<hr> 
+<p>
+<span class="fieldName"> Comment: </span>
+<textarea name="comment" rows="2" cols="40">
+Enter your comment here ....
+</textarea>
+</p>
+
+  <hr>
+    <div class="buttons"> <!-- style="text-align:center;">  -->   
+  
+  <input type="reset" value="Clear"  >
+  <input type="submit" value="Submit" >
+   </div> 
+
+</div>
+</form>
+</body>
+</html>
